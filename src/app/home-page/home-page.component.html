@@ -1,0 +1,172 @@
+  <div class="container">
+    <h2 class="m-4">A slice of heaven.</h2>
+    <!-- The main carousel section -->
+  <mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'">
+    <mdb-carousel-item class="p-1">
+      <img
+        src="../../assets/pizza-imgs/pizza1.jpg"
+        class="d-block w-100"
+        alt="..."
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>THE DELICIOUS STORY OF THE PIZZA</h5>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </mdb-carousel-item>
+    <mdb-carousel-item class="mt-3">
+      <img
+        src="../../assets/pizza-imgs/pizza2.jpg"
+        class="d-block w-100"
+        alt="..."
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>any time is a good time for pizza.</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </mdb-carousel-item>
+    <mdb-carousel-item class="mt-3">
+      <img
+        src="../../assets/pizza-imgs/pizza4.jpg"
+        class="d-block w-100"
+        alt="..."
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>worry less and eat more pizza.</h5>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </mdb-carousel-item>
+  </mdb-carousel>
+
+  <!-- More information section about the pizza -->
+  <h2 class="m-5">pizza never goes out of style.</h2>
+  <div class="card mt-2 p-1 shadow mb-2" style="max-width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img
+          src="../../assets/pizza-imgs/shourav-sheikh-a66sGfOnnqQ-unsplash.jpg"
+          alt="..."
+          class="img-fluid"
+        />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{pizzas[1].name}}</h5>
+          <p class="card-text">
+           {{pizzas[1].description}}
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Information Section 2 -->
+  <h2 class="m-5">life is not about finding yourself, it's about finding pizza.</h2>
+  <div class="card mb-3 shadow">
+    <img
+      src="../../assets/pizza-imgs/pw1.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body shadow">
+      <h5 class="card-title">Pizza Recipe</h5>
+      <p class="card-text">
+        Be it any occasion, we all love to eat pizza at home. But, what goes behind making this delicious dish? Well, learn all about making a delicious pizza at home with this easy recipe that will take you through detailed steps some tips that will guide you in preparing a Pizza at home.
+      </p>
+      <p class="card-text">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </p>
+    </div>
+  </div>
+  <div class="card shadow mb-3">
+    <div class="card-body shadow">
+      <h5 class="card-title">8 Reasons to love Pizza</h5>
+      <p class="card-text">
+        It tastes and smells amazing. Pretty much any food out there—especially pizza—will make you feel like you're floating in the clouds if they taste great. ...
+      </p>
+      <p class="card-text">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </p>
+    </div>
+    <img
+      src="../../assets/pizza-imgs/pw2.jpg"
+      class="card-img-bottom"
+      alt="..."
+    />
+  </div>
+
+  <!-- Featured Pizza section -->
+  <h2 class="m-5">if at first you don't succeed, order pizza.</h2>
+  <div class="row row-cols-1 row-cols-md-2 g-4 p-1 mt-2 shadow mb-2">
+    <div class="col">
+      <div class="card">
+        <img
+          src="../../assets/pizza-imgs/ps1.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{pizzas[2].name}}</h5>
+          <p class="card-text">
+            {{pizzas[2].description}}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img
+          src="../../assets/pizza-imgs/ps2.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{pizzas[3].name}}</h5>
+          <p class="card-text">
+            {{pizzas[3].description}}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img
+          src="../../assets/pizza-imgs/ps3.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{pizzas[4].name}}</h5>
+          <p class="card-text">
+            {{pizzas[4].description}}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img
+          src="../../assets/pizza-imgs/ps4.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{pizzas[5].name}}</h5>
+          <p class="card-text">
+            {{pizzas[5].description}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- <div *ngFor="let item of pizzas">
+    {{item.id}}    
+    {{item.name}}
+    <img src="{{item.img}}" alt="">
+  </div> -->
+
