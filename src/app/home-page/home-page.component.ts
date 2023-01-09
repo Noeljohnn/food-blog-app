@@ -1,14 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import pizzaData  from '../pizza.json';
-interface Pizza {
-  id:Number;
-  name:string;
-  veg:boolean;
-  price:Number;
-  description:string;
-  quantity:Number;
-  img:string;
-}
+import { PizzaService } from '../services/pizza.service';
+
 
 @Component({
   selector: 'app-home-page',
@@ -17,27 +9,21 @@ interface Pizza {
 })
 export class HomePageComponent implements OnInit {
 
-  // pizzas: any
 
-  constructor() { }
-  pizzas:Pizza[] = pizzaData;
-
+  constructor(private pizzaService:PizzaService) { }
+  pizzaData: any
 
   ngOnInit(): void {
-    // this.getAllData()
+    this.getAllData()
   }
 
-//   getAllData(){
-//     this.pizzaService.getPizzaData()
-//     .subscribe({
-//       next: (response: any) => {
-//         this.pizzas = response
-//         console.log(response);
-//       }
-//     })
-// }
-
-// getDessertData(){
-//   this
-// }
+  getAllData(){
+    this.pizzaService.getPizza()
+    .subscribe({
+      next: (response: any) => {
+        this.pizzaData = response
+        console.log(response);
+      }
+    })
+}
 }

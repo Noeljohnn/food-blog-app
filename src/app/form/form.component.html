@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="text-center mt-5">
+    <h1>Subscribe</h1>
+    </div>
+    <form [formGroup]="useremailForm" (ngSubmit)="onSubmit()">
+        <mdb-form-control class="mb-3">
+            <input mdbInput type="text" required="true" id="form1" class="form-control" formControlName="firstName"/>
+            <label mdbLabel class="form-label" for="form1">First Name</label>
+          </mdb-form-control>
+
+          <mdb-form-control class="mb-3">
+            <input mdbInput type="text" id="form2" class="form-control" formControlName="lastName"/>
+            <label mdbLabel class="form-label" for="form2">Last Name</label>
+          </mdb-form-control>
+
+          <mdb-form-control class="mb-3">
+            <input mdbInput type="email" id="form3" class="form-control" formControlName="email"/>
+            <label mdbLabel class="form-label" for="form3">Email</label>
+          </mdb-form-control>
+
+          <div class="text-end">
+            <p>Complete the form to enable the button</p>
+            <button type="submit" [disabled]= "!useremailForm.valid"class="btn btn-dark m-3" (click)="postUser()">Submit</button></div>
+</form>
+<h1>subscribers</h1>
+<div class="card" *ngFor="let item of subscribers" style="width: 18rem;">
+  <ul class="list-group list-group-light">
+    <li class="list-group-item px-3">{{item.firstName}} {{item.lastName}}</li>
+  </ul>
+</div>
+</div>

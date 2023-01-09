@@ -1,4 +1,5 @@
-[
+{
+  "pizzas": [
     {
       "id": 1,
       "name": "Margherita",
@@ -170,4 +171,31 @@
       "quantity": 1,
       "img": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/farmers-pick.fcd8cacee43fb94e173e5f04fdf2c2b5.1.jpg"
     }
+  ],
+  "subscribers": [
+    {
+      "firstName": "Noel",
+      "lastName": "John",
+      "email": "noel.john@unvired.io",
+      "id": 1
+    },
+    {
+      "firstName": "sharath",
+      "lastName": "HG",
+      "email": "sharath@gmail.com",
+      "id": 2
+    },
+    {
+      "firstName": "sachin",
+      "lastName": "B ",
+      "email": "sachi@gmail.com",
+      "id": 3
+    },
+    {
+      "firstName": "sachin p",
+      "lastName": "unvired",
+      "email": "gg@gg.com",
+      "id": 4
+    }
   ]
+}

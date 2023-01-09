@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Rubik+Moonrocks&family=Splash&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rock+Salt&family=Rubik+Moonrocks&family=Splash&display=swap');
-h2 {
+h1 {
     font-family: 'Rock Salt', cursive;
     font-family: 'Rubik Moonrocks', cursive;
     font-family: 'Splash', cursive;
 }
 
+body {
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+}
 

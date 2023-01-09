@@ -1,15 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import pizzaData  from '../pizza.json';
-interface Pizza {
-  id:Number;
-  name:string;
-  veg:boolean;
-  price:Number;
-  description:string;
-  quantity:Number;
-  img:string;
-
-}
+import { PizzaService } from '../services/pizza.service';
 
 @Component({
   selector: 'app-all-pizza',
@@ -18,10 +8,17 @@ interface Pizza {
 })
 export class AllPizzaComponent implements OnInit {
 
-  constructor() { }
-  pizzas:Pizza[] = pizzaData;
+  constructor(private pizzaService:PizzaService) { }
+  allPizza: any
 
   ngOnInit(): void {
+    this.getAllPizza()
   }
 
+  getAllPizza(){
+    this.pizzaService.getPizza()
+    .subscribe(res=>{
+    this.allPizza = res
+  })
+  }
 }

@@ -1,5 +1,5 @@
   <div class="container">
-    <h2 class="m-4">A slice of heaven.</h2>
+    <h1 class="m-4">A slice of heaven.</h1>
     <!-- The main carousel section -->
   <mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'">
     <mdb-carousel-item class="p-1">
@@ -38,7 +38,7 @@
   </mdb-carousel>
 
   <!-- More information section about the pizza -->
-  <h2 class="m-5">pizza never goes out of style.</h2>
+  <h1 class="m-5">pizza never goes out of style.</h1>
   <div class="card mt-2 p-1 shadow mb-2" style="max-width: 100%;">
     <div class="row g-0">
       <div class="col-md-4">
@@ -50,9 +50,9 @@
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">{{pizzas[1].name}}</h5>
+          <h5 class="card-title">{{pizzaData[1].name}}</h5>
           <p class="card-text">
-           {{pizzas[1].description}}
+           {{pizzaData[1].description}}
           </p>
           <p class="card-text">
             <small class="text-muted">Last updated 3 mins ago</small>
@@ -63,7 +63,7 @@
   </div>
 
   <!-- Information Section 2 -->
-  <h2 class="m-5">life is not about finding yourself, it's about finding pizza.</h2>
+  <h1 class="m-5">life is not about finding yourself, it's about finding pizza.</h1>
   <div class="card mb-3 shadow">
     <img
       src="../../assets/pizza-imgs/pw1.jpg"
@@ -98,7 +98,7 @@
   </div>
 
   <!-- Featured Pizza section -->
-  <h2 class="m-5">if at first you don't succeed, order pizza.</h2>
+  <h1 class="m-5">if at first you don't succeed, order pizza.</h1>
   <div class="row row-cols-1 row-cols-md-2 g-4 p-1 mt-2 shadow mb-2">
     <div class="col">
       <div class="card">
@@ -108,9 +108,9 @@
           alt="..."
         />
         <div class="card-body">
-          <h5 class="card-title">{{pizzas[2].name}}</h5>
+          <h5 class="card-title">{{pizzaData[2].name}}</h5>
           <p class="card-text">
-            {{pizzas[2].description}}
+            {{pizzaData[2].description}}
           </p>
         </div>
       </div>
@@ -123,9 +123,9 @@
           alt="..."
         />
         <div class="card-body">
-          <h5 class="card-title">{{pizzas[3].name}}</h5>
+          <h5 class="card-title">{{pizzaData[3].name}}</h5>
           <p class="card-text">
-            {{pizzas[3].description}}
+            {{pizzaData[3].description}}
           </p>
         </div>
       </div>
@@ -138,9 +138,9 @@
           alt="..."
         />
         <div class="card-body">
-          <h5 class="card-title">{{pizzas[4].name}}</h5>
+          <h5 class="card-title">{{pizzaData[4].name}}</h5>
           <p class="card-text">
-            {{pizzas[4].description}}
+            {{pizzaData[4].description}}
           </p>
         </div>
       </div>
@@ -153,20 +153,12 @@
           alt="..."
         />
         <div class="card-body">
-          <h5 class="card-title">{{pizzas[5].name}}</h5>
+          <h5 class="card-title">{{pizzaData[5].name}}</h5>
           <p class="card-text">
-            {{pizzas[5].description}}
+            {{pizzaData[5].description}}
           </p>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-
-  <!-- <div *ngFor="let item of pizzas">
-    {{item.id}}    
-    {{item.name}}
-    <img src="{{item.img}}" alt="">
-  </div> -->
-
